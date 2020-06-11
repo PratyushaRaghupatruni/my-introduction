@@ -3,53 +3,65 @@
     <head>
         <title>My Bio</title>
         <style>
-            h1{
+            body{
+                background-color: bisque;
+                font-size: 18px;
+                
+            }
+    
+            header > h1{
                 text-align:center;
                 background-color:black;
                 text-decoration:underline;  
                 color:blanchedalmond;
                 font-size:xxx-large;
+                line-height:70px;
             }
-            h2{
-                text-align:center;
-                font-size:xx-large;
-            }
-
-            img{
-                display:block;
-                margin-left:auto;
-                margin-right:auto;
+            #bio{
+                width:70%
             }
 
-            p{
-                text-align:center;
+            #bio > h2{
+                padding:15px;   
             }
 
-            ul.list{
-                text-align:center;
-                list-style-type:none;
-                border:5px;
-            }  
+            #bio > img{
+                float:left;
+                padding-left:15px;
+                padding-right:15px;
+                
+            }
+            #contact{
+                width:30%;
+                float:right;
+
+            }
+            #contact > h3{
+                font-size:28px;
+            }
             
-            li.list{
-                border:5px black;  
-            }
          </style>
         </head>
+
     <body>
-        <h1>Student Bio</h1>
-        <h2>Your Name</h2>
-        <img src="/Users/pratyusharaghupatruni/Desktop/my-introduction/IMG_8096.jpeg"
-         alt="Pratyusha Raghupatruni" width="200" height="200" >
-        <p>I am Pratyusha Raghupatruni.I live in Seattle.<br>
+        <header>
+          <h1>Student Bio</h1>
+        </header>
+        <section id= "bio" >
+          <h2>Your Name</h2>
+          <img src="IMG_8096.jpeg" alt="Pratyusha Raghupatruni" width="200" height="200" >
+          <p>I am Pratyusha Raghupatruni.I live in Seattle.<br>
             I had 2 years of Experience and had a break in my career for starting my family.<br>
             I am very excited to join this program and restart my career.</p>
-
-        <h2>Contact Info</h2> 
-        <ul class="list">
-          <li> <strong>Email:</strong>pratyusha.raghupatruni@gmail.com</li>
-          <li><strong>Github:</strong>PratyushaRaghupatruni</li>
-          <li><strong>Portfolio:</strong>Coming soon</li>
-        </ul> 
+        </section>
+        <section id ="contact">
+          <h3>Contact Info</h3> 
+          <ul>
+            <li> <strong>Email:</strong>pratyusha.raghupatruni@gmail.com</li>
+            <li><strong>Github:</strong>PratyushaRaghupatruni</li>
+            <li><strong>Portfolio:</strong>Coming soon</li>
+          </ul> 
+        </section>
+        
     </body>
 </html>
